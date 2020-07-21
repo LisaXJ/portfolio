@@ -19,7 +19,7 @@
 	color: black;
 	-webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
 	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-color: #454545;
 }
 
 .main-heading {
@@ -28,7 +28,7 @@
 	color: black;
 	-webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
 	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-color: #454545;
 }
 
 .menu-tag-container {
