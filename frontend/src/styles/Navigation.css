@@ -42,3 +42,8 @@
 	padding-right: 1rem;
 	padding-left: 1rem;
 }
+
+.menu-tags:hover {
+	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+	cursor: pointer;
+}

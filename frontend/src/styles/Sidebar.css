@@ -1,0 +1,36 @@
+.sidebar-container-outer {
+    position: absolute;
+    top: 16vh;
+    left: 6vw;
+    
+    width: 18rem;
+    height: 35rem;
+}
+
+.sidebar-container {
+    position: absolute;
+    top: 1.5vh;
+    left: 1vw;
+    
+    width: 18rem;
+    height: 35rem;
+}
+
+.sidebar-border {
+    background-color: transparent;
+    border: solid;
+    border-width: 1px;
+    border-color: aquamarine;
+}
+
+.sidebar-text-container {
+    max-height: 33.5rem;
+    overflow: auto;
+    margin: 0.3rem 1.3rem 0rem 0.5rem;
+    
+    text-align: center;
+}
+
+.sidebar-divider {
+    margin: 1rem 1.5rem 1rem 1.5rem;
+}
