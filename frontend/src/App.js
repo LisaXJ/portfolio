@@ -6,7 +6,7 @@ import React, { Fragment } from 'react';
 import './App.css';
 
 import Navigation from './screens/Navigation';
-import HomePage from './screens/HomePage';
+import MainBody from './screens/MainBody';
 import Sidebar from './screens/Sidebar';
 import LandingPage from './screens/LandingPage';
 

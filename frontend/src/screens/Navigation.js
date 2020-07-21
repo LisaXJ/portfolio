@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { UncontrolledButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 const Navigation = () => {
 	const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -11,10 +11,10 @@ const Navigation = () => {
 			<div className="main-heading">Hello</div>
 
 			<div className="menu-tag-container">
-				{/* <Dropdown isOpen={dropdownOpen} toggle={toggle}>
-					<div className="menu-tags">JavaScript</div>
+				<UncontrolledButtonDropdown>
+					<DropdownToggle tag="span" className="menu-tags">JavaScript</DropdownToggle>
 
-					<DropdownMenu>
+					<DropdownMenu className="dropdown-menu">
 						<DropdownItem>Header</DropdownItem>
 						<DropdownItem>Some Action</DropdownItem>
 						<DropdownItem>Action (disabled)</DropdownItem>
@@ -23,16 +23,63 @@ const Navigation = () => {
 						<DropdownItem>Bar Action</DropdownItem>
 						<DropdownItem>Quo Action</DropdownItem>
 					</DropdownMenu>
-				</Dropdown> */}
+				</UncontrolledButtonDropdown>
 
-				<div class="dropdown">
-					<div className="menu-tags">JavaScript</div>
-				</div>
+				<UncontrolledButtonDropdown>
+					<DropdownToggle tag="span" className="menu-tags">MySQL</DropdownToggle>
 
-				<div className="menu-tags">MySQL</div>
-				<div className="menu-tags">Python</div>
-				<div className="menu-tags">Java</div>
-				<div className="menu-tags">Natural Language Processing</div>
+					<DropdownMenu className="dropdown-menu">
+						<DropdownItem>Header</DropdownItem>
+						<DropdownItem>Some Action</DropdownItem>
+						<DropdownItem>Action (disabled)</DropdownItem>
+						<DropdownItem />
+						<DropdownItem>Foo Action</DropdownItem>
+						<DropdownItem>Bar Action</DropdownItem>
+						<DropdownItem>Quo Action</DropdownItem>
+					</DropdownMenu>
+				</UncontrolledButtonDropdown>
+
+				<UncontrolledButtonDropdown>
+					<DropdownToggle tag="span" className="menu-tags">Python</DropdownToggle>
+
+					<DropdownMenu className="dropdown-menu">
+						<DropdownItem>Header</DropdownItem>
+						<DropdownItem>Some Action</DropdownItem>
+						<DropdownItem>Action (disabled)</DropdownItem>
+						<DropdownItem />
+						<DropdownItem>Foo Action</DropdownItem>
+						<DropdownItem>Bar Action</DropdownItem>
+						<DropdownItem>Quo Action</DropdownItem>
+					</DropdownMenu>
+				</UncontrolledButtonDropdown>
+
+				<UncontrolledButtonDropdown>
+					<DropdownToggle tag="span" className="menu-tags">Java</DropdownToggle>
+
+					<DropdownMenu className="dropdown-menu">
+						<DropdownItem>Header</DropdownItem>
+						<DropdownItem>Some Action</DropdownItem>
+						<DropdownItem>Action (disabled)</DropdownItem>
+						<DropdownItem />
+						<DropdownItem>Foo Action</DropdownItem>
+						<DropdownItem>Bar Action</DropdownItem>
+						<DropdownItem>Quo Action</DropdownItem>
+					</DropdownMenu>
+				</UncontrolledButtonDropdown>
+				
+				<UncontrolledButtonDropdown>
+					<DropdownToggle tag="span" className="menu-tags">Natural Language Processing</DropdownToggle>
+
+					<DropdownMenu className="dropdown-menu">
+						<DropdownItem>Header</DropdownItem>
+						<DropdownItem>Some Action</DropdownItem>
+						<DropdownItem>Action (disabled)</DropdownItem>
+						<DropdownItem />
+						<DropdownItem>Foo Action</DropdownItem>
+						<DropdownItem>Bar Action</DropdownItem>
+						<DropdownItem>Quo Action</DropdownItem>
+					</DropdownMenu>
+				</UncontrolledButtonDropdown>
 			</div>
 		</div>
 	);
