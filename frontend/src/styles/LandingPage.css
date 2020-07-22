@@ -1,0 +1,77 @@
+.landing-page-container {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: aquamarine;
+}
+
+.landing-page-text {
+    height: 40vh;
+    width: 50vw;
+    border: solid 1px white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.3rem 1rem 1.3rem;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.lp-button {
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+    background-color: transparent;
+    padding: .5rem 2rem .5rem 2rem;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.lp-button.btn-secondary {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+}
+
+.button-animation-hidden {
+    overflow: hidden;
+    display: inline-block;
+  
+    background-image: radial-gradient(circle, white, white);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .8s, color .8s;
+  }
+
+  .button-animation-hidden:hover {
+    background-color: transparent;
+    background-size: 100% 100%;
+    color: aquamarine;
+    border-color: white;
+  }
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}  
+
+.main__overlay {
+    background-color: rgba(0, 0, 0, 0.363);
+}
+  
+  

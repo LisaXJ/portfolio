@@ -12,14 +12,6 @@
 
 	/* styling */
 	background-color: aquamarine;
-
-	/* text and font stuff */
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 2rem;
-	color: black;
-	-webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: #454545;
 }
 
 .main-heading {
@@ -41,9 +33,30 @@
 .menu-tags {
 	padding-right: 1rem;
 	padding-left: 1rem;
+
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 2rem;
+	color: black;
+	-webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #454545;
 }
 
 .menu-tags:hover {
 	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
 	cursor: pointer;
+}
+
+.dropdown-menu {
+	margin-left: 1rem;
+	padding-right: auto;
+	width: 100%;
+	background-color: rgba(88, 179, 149, 0.514);
+	border: solid 1px aquamarine;
+
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1rem;
+	color: black;
+
+	overflow: hidden;
 }
