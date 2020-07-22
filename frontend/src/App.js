@@ -2,18 +2,24 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'reactstrap';
 import 'animate.css';
 
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import './App.css';
 
-import Navigation from './screens/Navigation';
-import MainBody from './screens/MainBody';
-import Sidebar from './screens/Sidebar';
 import LandingPage from './screens/LandingPage';
 
-function App() {
+const App = () => {
+	const [apiResponse, setApiResponse] = useState("");
+
+	useEffect(() => {
+		fetch('http://localhost:9000/testAPI')
+			.then(res => res.text())
+			.then(res => setApiResponse(res));
+	}, []);
+
 	return (
 		<Fragment>
 			<LandingPage />
+			<p className="App-intro">;{apiResponse}</p>
 		</Fragment>
 	);
 }
